@@ -43,6 +43,12 @@ header nav > a{
     border-radius: 15px
 }
 
+header nav > a:hover{
+    color: var(--cor1);
+    background-color: var(--cor4);
+    transition: .7s;
+}
+
 main{
     max-width: 1920px;
     min-width: 320px;
@@ -149,6 +155,7 @@ main{
 .itens{
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .itens > div{
@@ -159,6 +166,12 @@ main{
 
 .legenda{
     text-align: center;
+    text-decoration: none;
+}
+
+.legenda > a{
+    text-decoration: none;
+    color: black;
 }
 
 footer{
@@ -195,6 +208,11 @@ footer{
     }
     .itens{
         display: flex;
+        align-items: center;
+        flex-direction: column;
+
     }
-    
+    .legenda{
+        text-align: center;
+    }
 }
